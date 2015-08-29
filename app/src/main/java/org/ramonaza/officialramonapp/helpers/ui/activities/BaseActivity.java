@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 import org.ramonaza.officialramonapp.R;
 import org.ramonaza.officialramonapp.settings.ui.activities.SettingsActivity;
+import org.ramonaza.officialramonapp.settings.ui.activities.HelpActivity;
 
 /**
  * Created by ilanscheinkman on 5/9/15.
@@ -19,6 +20,11 @@ public abstract class BaseActivity  extends Activity{
             case R.id.action_settings:
                 Intent settingsIntent=new Intent(this,SettingsActivity.class);
                 startActivity(settingsIntent);
+                break;
+            case R.id.action_help:
+                Intent helpIntent=new Intent(this,HelpActivity.class);
+                startActivity(helpIntent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
